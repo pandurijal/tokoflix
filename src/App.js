@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Movie from "./components/Movie";
+import NavHeader from "./components/Navbar";
 
 class App extends Component {
   state = {
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar balance={this.state.balance} />
+          <NavHeader balance={this.state.balance} />
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/page/:pg" component={Home} />
