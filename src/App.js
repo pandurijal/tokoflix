@@ -1,28 +1,51 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Movie from "./components/Movie";
 
 class App extends Component {
+  state = {
+    balance: 100000,
+    bought: []
+  };
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar balance={this.state.balance} />
+          <Switch>
+            <Route path="/" component={Home} exact />
+            <Route path="/page/:pg" component={Home} />
+            <Route
+              path="/movie/:id"
+              render={props => (
+                <Movie
+                  {...props}
+                  balance={this.state.balance}
+                  bought={this.state.bought}
+                  onBuying={this.handleBuying}
+                />
+              )}
+            />
+          </Switch>
+        </div>
+      </BrowserRouter>
     );
   }
+  handleBuying = (id, price) => {
+    let balance = this.state.balance;
+    let boughtArr = [];
+    boughtArr.id = id;
+    let bought = [...this.state.bought, boughtArr];
+    if (balance - price < 0) {
+      return null;
+    } else {
+      balance = balance - price;
+    }
+    this.setState({ balance, bought });
+  };
 }
 
 export default App;
