@@ -33,6 +33,7 @@ class App extends Component {
 
   componentDidUpdate() {
     console.log("page", this.state);
+    window.scrollTo(0, 0);
   }
 
   fetchNowPlaying = async () => {

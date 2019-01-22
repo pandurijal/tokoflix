@@ -16,7 +16,7 @@ class Pagination extends Component {
       nextBtn["hidden"] = "hidden";
     }
     return (
-      <div>
+      <div className="pagination">
         <Link to={{ pathname: `/page/${page - 1}` }}>
           <button onClick={this.props.onPrev} {...prevBtn}>
             Prev

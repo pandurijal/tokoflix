@@ -1,5 +1,27 @@
+body {
+  margin-top: 75px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Global */
+
 .App {
   text-align: center;
+  background-color: #f1f1f1;
+  font-family: Source Sans Pro;
+  padding: 15px 0;
+}
+
+.img-box img {
+  width: 100%;
 }
 
 /* Navbar */
@@ -41,4 +63,59 @@
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
+}
+
+/* Home */
+/* Home - NowPlaying */
+.sub-header {
+  font-size: 36px;
+}
+
+.movie-box {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+  margin: 30px 0;
+  position: relative;
+}
+
+.movie-box .detail {
+  background-color: #fff;
+  padding: 15px 10px;
+  border-bottom: solid 3px #42b549;
+}
+
+.movie-box .detail .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.movie-box .rating {
+  background-color: #42b549;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  padding: 10px;
+  border-radius: 100%;
+  top: -15px;
+  right: 5px;
+  min-width: 45px;
+}
+
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Home - Pagination */
+.pagination button {
+  border: 0;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #42b549;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin: 0 15px;
 }
