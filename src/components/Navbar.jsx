@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import { Nav, Navbar, NavItem } from "react-bootstrap";
 
 class NavHeader extends Component {
   render() {
     return (
       <div>
-        <Navbar>
+        <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#home" className="title">
+              <a href="/" className="title">
                 tokoFLIX
               </a>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>
             <NavItem eventKey={1} href="#">
-              Saldo : {this.props.balance}
+              Saldo : <span>{this.props.balance}</span>
             </NavItem>
           </Nav>
         </Navbar>

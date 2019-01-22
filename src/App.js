@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
+        <React.Fragment>
           <NavHeader balance={this.state.balance} />
           <Switch>
             <Route path="/" component={Home} exact />
@@ -30,7 +30,7 @@ class App extends Component {
               )}
             />
           </Switch>
-        </div>
+        </React.Fragment>
       </BrowserRouter>
     );
   }
