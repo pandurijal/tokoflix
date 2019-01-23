@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import Movie from "./components/Movie";
-import NavHeader from "./components/Navbar";
+import NavHeader from "./components/NavHeader";
+import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
@@ -30,6 +31,7 @@ class App extends Component {
               )}
             />
           </Switch>
+          <Footer />
         </React.Fragment>
       </BrowserRouter>
     );

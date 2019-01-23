@@ -126,7 +126,6 @@ class Movie extends Component {
                 </p>
                 {tagline ? <p className="tagline">"{tagline}"</p> : null}
                 <p className="overview">{overview}</p>
-
                 <Casts casts={this.state.casts} />
               </div>
             </Col>

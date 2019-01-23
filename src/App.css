@@ -283,3 +283,18 @@ a:hover {
   font-weight: 600;
   text-align: center;
 }
+
+/* Footer */
+.footer {
+  background-color: #081c24;
+  text-align: center;
+  padding: 15px 0;
+  border-top: solid 3px #118118;
+}
+
+.footer a {
+  margin-bottom: 0;
+  color: #42b549;
+  font-size: 18px;
+  font-weight: 700;
+}
