@@ -9,8 +9,7 @@ class App extends Component {
   state = {
     movLists: [],
     page: 1,
-    totalPages: null,
-    balance: 100000
+    totalPages: null
   };
 
   render() {

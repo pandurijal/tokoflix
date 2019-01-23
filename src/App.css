@@ -1,5 +1,6 @@
 body {
   margin-top: 75px;
+  background-color: #f1f1f1;
 }
 
 a {
@@ -11,11 +12,31 @@ a:hover {
   color: #000;
 }
 
+.btn {
+  border-radius: 3px;
+  padding: 5px 25px;
+}
+
+.btn-primer {
+  background-color: #42b549;
+  border-color: #118118;
+  color: #fff;
+}
+
+.btn-primer:hover {
+  background-color: #118118;
+  color: #fff;
+}
+
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Global */
 
 .App {
   text-align: center;
-  background-color: #f1f1f1;
   font-family: Source Sans Pro;
   padding: 15px 0;
 }
@@ -71,25 +92,25 @@ a:hover {
   font-size: 36px;
 }
 
-.movie-box {
+.list-box {
   box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
   margin: 30px 0;
   position: relative;
 }
 
-.movie-box .detail {
+.list-box .detail {
   background-color: #fff;
   padding: 15px 10px;
   border-bottom: solid 3px #42b549;
 }
 
-.movie-box .detail .title {
+.list-box .detail .title {
   font-size: 18px;
   font-weight: 700;
   color: #000;
 }
 
-.movie-box .rating {
+.list-box .rating {
   background-color: #42b549;
   color: #fff;
   font-size: 18px;
@@ -100,11 +121,6 @@ a:hover {
   top: -15px;
   right: 5px;
   min-width: 45px;
-}
-
-.row-eq-height {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* Home - Pagination */
@@ -118,4 +134,152 @@ a:hover {
   padding: 10px 25px;
   border-radius: 5px;
   margin: 0 15px;
+}
+
+/* Movie */
+.movie-box {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+  margin: 0 auto;
+  width: 75%;
+  padding: 15px 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Movie:Details */
+.movie-box .detail .title {
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.movie-box .detail .title span {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.movie-box .detail .tagline {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.movie-box .detail .overview {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/* Movie:Rating */
+.movie-box .detail .rating span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1c40f;
+}
+
+.movie-box .detail .rating .progress {
+  margin-bottom: 0;
+  margin-right: 10px;
+  height: 5px;
+  width: 100px;
+  display: inline-block;
+}
+
+.movie-box .detail .rating .progress-bar {
+  background-color: #f1c40f;
+}
+
+/* Movie:Purchase */
+.movie-box .purchase {
+  text-align: center;
+}
+
+.movie-box .purchase .genres {
+  margin: 5px 0 10px;
+}
+
+.movie-box .purchase .genres .badge {
+  font-weight: normal;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.movie-box .purchase .runtime {
+  margin-bottom: 0;
+}
+
+.movie-box .purchase .runtime span {
+  font-weight: 700;
+}
+
+.movie-box .purchase .price {
+  font-family: Oswald;
+  font-size: 24px;
+}
+.movie-box .purchase .btn-purchase {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: Oswald;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.movie-box .purchase .btn-purchase[disabled] {
+  background-color: #000;
+  cursor: default;
+}
+
+.modal-content {
+  text-align: center;
+  border-radius: 3px;
+}
+
+.modal-content .modal-header {
+  background-color: #42b549;
+  color: #fff;
+}
+
+/* Movie:Casts */
+.cast-slider {
+  margin: 30px 0;
+}
+
+.cast-slider .slick-slide {
+  margin: 0 5px;
+}
+
+.cast-slider .slick-slide {
+  margin: 0 5px;
+}
+
+.cast-box {
+  box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 6px 0;
+  text-align: center;
+}
+
+.cast-box .name {
+  padding-top: 10px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/* Movie:Related */
+.related {
+  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 6px 0;
+  background-color: #fff;
+  margin: 30px auto 5px;
+}
+
+.related .related-box {
+  padding: 15px 10px;
+}
+
+.related .related-box .header {
+  font-size: 28px;
+  font-family: Oswald;
+}
+
+.related .title {
+  font-weight: 600;
+  text-align: center;
 }

@@ -8,7 +8,7 @@ import NavHeader from "./components/Navbar";
 class App extends Component {
   state = {
     balance: 100000,
-    bought: []
+    purchased: []
   };
   render() {
     return (
@@ -24,7 +24,7 @@ class App extends Component {
                 <Movie
                   {...props}
                   balance={this.state.balance}
-                  bought={this.state.bought}
+                  purchased={this.state.purchased}
                   onBuying={this.handleBuying}
                 />
               )}
@@ -38,13 +38,13 @@ class App extends Component {
     let balance = this.state.balance;
     let boughtArr = [];
     boughtArr.id = id;
-    let bought = [...this.state.bought, boughtArr];
+    let purchased = [...this.state.purchased, boughtArr];
     if (balance - price < 0) {
       return null;
     } else {
       balance = balance - price;
     }
-    this.setState({ balance, bought });
+    this.setState({ balance, purchased });
   };
 }
 

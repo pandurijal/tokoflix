@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class NavHeader extends Component {
   render() {
@@ -8,9 +9,7 @@ class NavHeader extends Component {
         <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/" className="title">
-                tokoFLIX
-              </a>
+              <Link to={{ pathname: "/" }}>tokoFLIX</Link>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav pullRight>

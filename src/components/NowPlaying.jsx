@@ -23,7 +23,7 @@ const NowPlaying = props => {
                   }}
                   className="link-movie"
                 >
-                  <div className="movie-box">
+                  <div className="list-box">
                     <div className="rating">
                       {" "}
                       {m.vote_average}
@@ -34,6 +34,7 @@ const NowPlaying = props => {
                     <div className="img-box">
                       <img
                         src={`https://image.tmdb.org/t/p/w500/` + m.poster_path}
+                        alt={`Poster` + title}
                       />
                     </div>
                     <div className="detail">
