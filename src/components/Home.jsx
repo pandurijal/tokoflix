@@ -15,6 +15,7 @@ class App extends Component {
   };
 
   render() {
+    console.log("home", this.props);
     return (
       <div className="App">
         <Grid>

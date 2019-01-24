@@ -13,12 +13,12 @@ class App extends Component {
   };
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <React.Fragment>
           <NavHeader balance={this.state.balance} />
           <Switch>
             <Route
-              path={process.env.PUBLIC_URL + "/"}
+              path="/"
               render={props => (
                 <Home
                   {...props}
@@ -28,7 +28,16 @@ class App extends Component {
               )}
               exact
             />
-            <Route path="/page/:pg" component={Home} />
+            <Route
+              path="/page/:pg"
+              render={props => (
+                <Home
+                  {...props}
+                  state={this.state}
+                  onBuying={this.handleBuying}
+                />
+              )}
+            />
             <Route
               path="/movie/:id"
               render={props => (
