@@ -17,7 +17,17 @@ class App extends Component {
         <React.Fragment>
           <NavHeader balance={this.state.balance} />
           <Switch>
-            <Route path="/" component={Home} exact />
+            <Route
+              path="/"
+              render={props => (
+                <Home
+                  {...props}
+                  state={this.state}
+                  onBuying={this.handleBuying}
+                />
+              )}
+              exact
+            />
             <Route path="/page/:pg" component={Home} />
             <Route
               path="/movie/:id"

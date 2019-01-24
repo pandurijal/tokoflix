@@ -90,6 +90,8 @@ a:hover {
 /* Home - NowPlaying */
 .sub-header {
   font-size: 36px;
+  font-family: Oswald;
+  font-weight: 700;
 }
 
 .list-box {
@@ -121,6 +123,11 @@ a:hover {
   top: -15px;
   right: 5px;
   min-width: 45px;
+}
+
+.list-box .detail .price {
+  font-family: Oswald;
+  font-size: 22px;
 }
 
 /* Home - Pagination */

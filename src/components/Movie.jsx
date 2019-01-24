@@ -80,6 +80,11 @@ class Movie extends Component {
                     >
                       BELI FILM
                     </button>
+                    <p style={{ color: `#e74c3c` }}>
+                      <b hidden={!purchasingStatus.length}>
+                        Anda telah membeli film ini
+                      </b>
+                    </p>
                     <Modal
                       className="purchase-modal"
                       show={this.state.purchaseModal}
@@ -183,7 +188,6 @@ class Movie extends Component {
     let res = await req.json();
     let similar = res.results.slice(0, 4);
     this.setState({ similar });
-    console.log("similar", this.state);
   };
 
   fetchRecommend = async () => {
@@ -193,7 +197,6 @@ class Movie extends Component {
     let res = await req.json();
     let recommend = res.results.slice(0, 4);
     this.setState({ recommend });
-    console.log("recommend", this.state);
   };
 
   calcPrice = () => {
