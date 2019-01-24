@@ -18,7 +18,7 @@ class App extends Component {
           <NavHeader balance={this.state.balance} />
           <Switch>
             <Route
-              path="/"
+              path={process.env.PUBLIC_URL + "/"}
               render={props => (
                 <Home
                   {...props}
