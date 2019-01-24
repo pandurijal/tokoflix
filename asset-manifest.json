@@ -1,13 +1,13 @@
 {
   "main.css": "/tokoflix/static/css/main.1b0d09ed.chunk.css",
-  "main.js": "/tokoflix/static/js/main.1f1a218c.chunk.js",
-  "main.js.map": "/tokoflix/static/js/main.1f1a218c.chunk.js.map",
+  "main.js": "/tokoflix/static/js/main.33caca7a.chunk.js",
+  "main.js.map": "/tokoflix/static/js/main.33caca7a.chunk.js.map",
   "static/js/1.4356f227.chunk.js": "/tokoflix/static/js/1.4356f227.chunk.js",
   "static/js/1.4356f227.chunk.js.map": "/tokoflix/static/js/1.4356f227.chunk.js.map",
   "runtime~main.js": "/tokoflix/static/js/runtime~main.c46b92b5.js",
   "runtime~main.js.map": "/tokoflix/static/js/runtime~main.c46b92b5.js.map",
   "static/css/main.1b0d09ed.chunk.css.map": "/tokoflix/static/css/main.1b0d09ed.chunk.css.map",
   "index.html": "/tokoflix/index.html",
-  "precache-manifest.35846afe91833d23e9a3dfa0fa8863a6.js": "/tokoflix/precache-manifest.35846afe91833d23e9a3dfa0fa8863a6.js",
+  "precache-manifest.b13242d526243988f2bf413249c21550.js": "/tokoflix/precache-manifest.b13242d526243988f2bf413249c21550.js",
   "service-worker.js": "/tokoflix/service-worker.js"
 }

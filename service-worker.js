@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tokoflix/precache-manifest.35846afe91833d23e9a3dfa0fa8863a6.js"
+  "/tokoflix/precache-manifest.b13242d526243988f2bf413249c21550.js"
 );
 
 workbox.clientsClaim();
