@@ -11,8 +11,8 @@ class NavHeader extends Component {
             <Link to={{ pathname: "/" }}>tokoFLIX</Link>
           </Navbar.Brand>
         </Navbar.Header>
-        <Nav pullRight>
-          <NavItem eventKey={1} href="#">
+        <Nav pullRight className="balance">
+          <NavItem eventKey={1}>
             Saldo : <span>{this.props.balance}</span>
           </NavItem>
         </Nav>

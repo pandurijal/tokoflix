@@ -15,7 +15,6 @@ class App extends Component {
   };
 
   render() {
-    console.log("home", this.props);
     return (
       <div className="App">
         <Grid>
@@ -32,7 +31,7 @@ class App extends Component {
                 p => p.id === id
               );
               return (
-                <Col sm={2} md={3} key={m.id}>
+                <Col xs={6} sm={4} md={3} key={m.id} className="xs-to-1">
                   <Link
                     to={{
                       pathname: `/movie/${slug}`,

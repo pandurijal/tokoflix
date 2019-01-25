@@ -53,7 +53,7 @@ class Movie extends Component {
       <div>
         <Grid className="movie-box">
           <Row className="show-grid">
-            <Col xs={12} md={4}>
+            <Col xs={4} md={4} className="xs-to-1">
               <div className="poster">
                 <div className="img-box">
                   <img
@@ -119,7 +119,7 @@ class Movie extends Component {
                 </div>
               </div>
             </Col>
-            <Col xs={12} md={8}>
+            <Col xs={8} md={8} className="xs-to-1">
               <div className="detail">
                 <div className="rating">
                   <ProgressBar now={rating * 10} />

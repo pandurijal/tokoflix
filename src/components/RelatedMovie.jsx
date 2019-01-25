@@ -17,7 +17,7 @@ const RelatedMovie = props => {
                 title = title.replace(/\s/g, "-");
                 let slug = "".concat(s.id, "-", title);
                 return (
-                  <Col md={3} key={id}>
+                  <Col xs={6} md={3} key={id}>
                     <Link
                       to={{
                         pathname: `/movie/${slug}`,
@@ -59,7 +59,7 @@ const RelatedMovie = props => {
                 title = title.replace(/\s/g, "-");
                 let slug = "".concat(r.id, "-", title);
                 return (
-                  <Col md={3} key={id}>
+                  <Col xs={6} md={3} key={id}>
                     <Link
                       to={{
                         pathname: `/movie/${slug}`,
